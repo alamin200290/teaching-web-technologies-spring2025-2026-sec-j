@@ -1,3 +1,1 @@
-Please submit your github repo here: https://forms.cloud.microsoft/r/q6xL65z0sL
-
-Example: https://github.com/alamin200290/teaching-web-technologies-spring2025-2026-sec-j
+Please submit your github repo here:https://github.com/sadia-21878/learning-web-technologies-spring2025-2026-sec-j.git
