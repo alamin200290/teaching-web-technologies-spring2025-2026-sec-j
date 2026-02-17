@@ -10,12 +10,80 @@
         <h1>Hello HTML</h1>
             Link
                 <a href="abc.html">Page 1</a>
-        <form>
+        <form method="" action="abc.html" enctype="">
             <fieldset>
-                <legend>Signin</legend>
-                Username: <input type="text" name="" value=""/> <br>
-                Password: <input type="text" name="" value=""/> <br>
-                        <input type="button" name="" value="Submit"/>
+                <legend>Sign up</legend>
+                <table>
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" name="username" value="" placeholder="username"/> </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="text" name="password" value=""/> </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email" value=""/> </td>
+                    </tr>
+                    <tr>
+                        <td>ID</td>
+                        <td><input type="number" name="id" value=""/> </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender" value=""/>Male 
+                            <input type="radio" name="gender" value=""/>Female 
+                            <input type="radio" name="gender" value=""/>Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ABC</td>
+                        <td>
+                            <input type="checkbox" name="abc" value=""/>L1 
+                            <input type="checkbox" name="abc" value=""/>L2 
+                            <input type="checkbox" name="abc" value=""/>L3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Add</td>
+                        <td>
+                            <textarea></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DOB</td>
+                        <td>
+                            <input type="date" name="dob" value=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DEPT</td>
+                        <td>
+                            <select name="dept">
+                                <option value="CSE">CSE</option>
+                                <option value="COE">COE</option>
+                                <option value="BBA">BBA</option>
+                                <option value="EEE">EEE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Image</td>
+                        <td>
+                           <input type="file" name="" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                           <input type="button" name="" value="Click" />
+                           <input type="reset" name="" value="Reset" />
+                           <input type="submit" name="" value="Submit" />
+                        </td>
+                    </tr>
+                </table>
             </fieldset>
         </form>
 </body>
