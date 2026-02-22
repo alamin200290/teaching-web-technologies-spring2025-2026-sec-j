@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <title>JS Example</title>
+</head>
+<body>
+        <h1>JS Example</h1>
+        <input type="text" id="username" name="username" value="" onkeyup="test()"/>
+        <input type="button" name="change" value="change" onclick="test()"/>
+        <p id="msg"> </p>
+
+        <script>
+            // name = "alamin";
+            // var name = "alamin";
+            // let name = "alamin";
+            // const name = "alamin";
+
+            let std = [1, 'alamin', 2.5];
+            std[0];
+
+            // if(1 === "1"){
+
+            // }else{
+
+            // }
+
+            // for(let a=0; a<10; a++){
+
+            // }
+
+            // function sum(a, b){
+            //     return a+b;
+            // }
+            // let sum = function (a, b){
+            //     return a+b;
+            // }
+            // let sum = (a,b)=>a+b;
+            // let test = function( a, b){
+            //     let c = a(10,20) +b;
+            //     return c;
+            // }
+            // test(sum, 10)
+
+            console.log(std);
+            //alert('test');
+            //document.write('testing js script...');
+            
+            function test(){
+                let head = document.getElementsByTagName('h1')[0];
+                let username = document.getElementById('username');
+
+                if(username.value == ""){
+                    document.getElementById('msg').innerHTML = "please type username!";
+                }else{
+                    head.innerHTML = username.value;
+                    head.style.color = "red";
+                    document.getElementById('msg').innerHTML = "";
+                // username.value = "";
+
+                }
+            }
+        </script>
+</body>
+</html>
