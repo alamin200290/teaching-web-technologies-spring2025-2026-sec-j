@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require_once('../model/userModel.php');
     if(isset($_REQUEST['submit'])){
 
         $username = $_REQUEST['username'];
@@ -11,8 +12,13 @@
         }else{
            
             $user = ['username'=>$username, 'password'=> $password, 'email'=> $email];
-            $_SESSION['user'] = $user;
-            header('location: ../view/login.php');
+            $status = addUser($user);
+            if($status){
+                header('location: ../view/login.php');
+            }else{
+                header('location: ../view/signup.php');
+            }
+
         }
     }else{
         echo "please submit form...";
